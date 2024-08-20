@@ -1,0 +1,50 @@
+Identificador: abc
+ Asignación: =
+ Entero: 12
+
+Entero: 13
+
+Entero: 4
+
+Entero: 5
+
+Entero: 6
+
+Real: 3.40
+
+Real: 3.14
+
+Entero: 3
+Operador: +
+Entero: 4
+
+Entero: 3
+Operador: -
+Entero: 4
+
+Entero: 4
+Operador: --
+
+Entero: 4
+Operador: ++
+
+Entero: 4
+Relación: >
+Entero: 6
+
+Entero: 4
+Relación: <=
+Entero: 5
+
+Entero: 6
+Relación: <>
+Entero: 5
+
+Entero: 4
+Relación: <
+Entero: 6
+
+Entero: 8
+Relación: >=
+Entero: 10
+
