@@ -675,7 +675,7 @@ YY_DECL
 		}
 
 	{
-#line 6 "lexer.l"
+#line 8 "lexer.l"
 
 #line 680 "lexer.c"
 
@@ -736,42 +736,42 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "lexer.l"
+#line 9 "lexer.l"
 {printf("Palabra reservada: %s\n", yytext);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 8 "lexer.l"
+#line 10 "lexer.l"
 {printf("Identificador: %s\n", yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 9 "lexer.l"
+#line 11 "lexer.l"
 {printf("Entero: %d\n", atoi(yytext));}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 10 "lexer.l"
+#line 12 "lexer.l"
 {printf("Real: %.2f\n", atof(yytext));}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 11 "lexer.l"
+#line 13 "lexer.l"
 {printf("Asignación: %s\n", yytext);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 12 "lexer.l"
+#line 14 "lexer.l"
 printf("Operador: %s\n", yytext);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 13 "lexer.l"
+#line 15 "lexer.l"
 printf("Relación: %s\n", yytext);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 15 "lexer.l"
+#line 17 "lexer.l"
 ECHO;
 	YY_BREAK
 #line 777 "lexer.c"
@@ -1779,7 +1779,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 15 "lexer.l"
+#line 17 "lexer.l"
 
 
 int main(int argc, char** argv){
