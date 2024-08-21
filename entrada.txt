@@ -14,3 +14,11 @@ abc = 12
 6<>5
 4<6
 8>=10
+while
+when
+what
+whey
+whi2
+whil2
+while3
+when3
