@@ -11,7 +11,7 @@ OPERADOR "+"|"-"|"*"|"/"|"++"|"--"
 RELACION ">"|"<"|">="|"<="|"<>"
 
 %%
-[\0\t\b]+   /*Ignorar espacios, excepto salto de línea*/
+[ \0\t\b]+   /*Ignorar espacios, excepto salto de línea*/
 \n  {++num_lines;}
 {RESERVADAS} {printf("Palabra reservada: %s en Línea %d\n", yytext, num_lines);}
 {IDENTIFICADOR} {printf("Identificador: %s en Línea %d\n", yytext, num_lines);}
