@@ -6,7 +6,7 @@ int num_lines = 1;
 IDENTIFICADOR [a-z][a-z0-9]*
 DIGITO [0-9]
 ASIGNACION [=]
-RESERVADAS "wh"+["ile"|"en"]+
+RESERVADAS "while"|"when"
 OPERADOR "+"|"-"|"*"|"/"|"++"|"--"
 RELACION ">"|"<"|">="|"<="|"<>"
 
