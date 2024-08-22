@@ -9,6 +9,7 @@ ASIGNACION [=]
 RESERVADAS "while"|"when"
 OPERADOR "+"|"-"|"*"|"/"|"++"|"--"
 RELACION ">"|"<"|">="|"<="|"<>"
+AGRUPACION "("|")"|"["|"]"
 
 %%
 [ \0\t\b]+   /*Ignorar espacios, excepto salto de línea*/
@@ -16,11 +17,12 @@ RELACION ">"|"<"|">="|"<="|"<>"
 {RESERVADAS} {printf("Palabra reservada: %s en Línea %d\n", yytext, num_lines);}
 {IDENTIFICADOR} {printf("Identificador: %s en Línea %d\n", yytext, num_lines);}
 {DIGITO}+ {printf("Entero: %d en Línea %d\n", atoi(yytext), num_lines);}
-{DIGITO}+"."?{DIGITO}* {printf("Real: %f en Línea %d\n", atof(yytext), num_lines);}
+{DIGITO}+"."{DIGITO}+ {printf("Real: %f en Línea %d\n", atof(yytext), num_lines);}
 {ASIGNACION} {printf("Asignación: %s en Línea %d\n", yytext, num_lines);}
 {OPERADOR} printf("Operador: %s en Línea %d\n", yytext, num_lines);
 {RELACION} printf("Relación: %s en Línea %d\n", yytext, num_lines);
-. printf("¡Error! en línea %d\n", num_lines);
+{AGRUPACION} printf("Agrupación: %s en Línea %d\n", yytext, num_lines);
+. printf("¡Error! Carácter no reconocido %s en línea %d\n", yytext, num_lines);
 %%
 int main(int argc, char** argv){
     ++argv, --argc;
