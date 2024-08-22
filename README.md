@@ -15,18 +15,18 @@
 
 	- Se debe haber generado el archivo 'lexer.c' tal como se ha especificado en el comando anterior, por lo que ahora procederemos a compilar con GCC o Clang. Con GCC el comando sería tal que así:
   ``` bash
-  	#Si lo compila en Windows necesitará poner 'lexer.exe' después de la opción -o en lugar de solo 'lexer'
-  	gcc lexer.c -o lexer -lfl #La opción '-lfl' es para enlazar el ejecutable a las bibliotecas de Flex
+  #Si lo compila en Windows necesitará poner 'lexer.exe' después de la opción -o en lugar de solo 'lexer'
+  gcc lexer.c -o lexer -lfl #La opción '-lfl' es para enlazar el ejecutable a las bibliotecas de Flex
   ```
 
 	- Con Clang sería así:
   ``` bash
-  	clang lexer.c -o lexer -lfl
+  clang lexer.c -o lexer -lfl
   ```
 
 	- El ejecutable generado se llama 'lexer', para poder ejecutarlo correctamente es necesario que al ejecutarlo se acompañe del nombre del archivo de entrada. Usando de ejemplo el archivo 'entrada.txt' que se encuentra en este mismo repo sería tal que así:
   ``` bash
-  	./lexer entrada.txt	#Si lo ejecuta en PowerShell el comando sería con '\' en lugar de '/'
+  ./lexer entrada.txt	#Si lo ejecuta en PowerShell el comando sería con '\' en lugar de '/'
   ```
 
 	- Si ha funcionado este debió generar en la terminal una salida parecida a la siguiente:
@@ -76,7 +76,7 @@
   ```
   - ***Comando opcional:*** Si desea guardar la salida generada en un archivo de texto, por ejemplo en el archivo 'salida.txt', puede ejecutar el ejecutable con el siguiente comando '>' en un sistema tipo Unix
   ```bash
-  	./lexer entrada.txt > salida.txt
+  ./lexer entrada.txt > salida.txt
   ```
 ## Pendiente
 - Añadir una opción para guardar la salida del programa en un archivo de texto en el mismo lexer generado para no usar utilidades del sistema y hacer el programa más portable y que no solo sea para sistemas tipo Unix
